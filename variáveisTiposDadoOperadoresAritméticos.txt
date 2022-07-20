@@ -41,7 +41,7 @@ São os valores e consequentemente operações que as variáveis podem assumir e
 
 Tipificação:
 - Estática (forte, quando a linguagem obriga que defina o tipo da variável no momento da criação) x Dinâmica (fraco, não é obrigado a definir o tipo da variável na criação; durante a execução da aplicação a linguagem detecta o valor na avriável e assumirá que a variável é daquele tipo)
-- Primitivo (dados mais básicos, são homogêneos. São valores numéricos, textuais..) x Composto (ligado a orientaçãoa objeto, por exemplo o struct na linguagem C)
+- Primitivo (dados mais básicos, são heterogêneos. São valores numéricos, textuais..) x Composto (ligado a orientaçãoa objeto, por exemplo o struct na linguagem C)
 
 Opções de tipos:
 - Textual;

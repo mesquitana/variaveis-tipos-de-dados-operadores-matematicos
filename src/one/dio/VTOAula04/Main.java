@@ -6,9 +6,37 @@ public class Main {
         short s1 = 1000;
         b1 = (byte) s1; // short vai virar byte, downcast
 
+        byte b2 = 13;
+        short s2;
+        s2 = (short) b2; // byte vai virar short, upcast
+
+        byte b3 = 1;
+        char c1;
+        c1 = (char) b3; // char
+
+        byte b4 = 13;
+        int i9;
+        i9 = (int) b4;
+
+        byte b5 = 13;
+        long l9;
+        l9 = (long) b5;
+
+        char c9 = 'A';
+        byte b9;
+        b9 = (byte) c9;
+
+        char c8 = 'A';
+        short s9;
+        s9 = (short) c8;
+
+        int i8 = 987876;
+        short s8;
+        s8 = (short) i8;
+
         long l1;
         int i1 = 10;
-        l1 = i1; //pegou o inteiro e coloou no long, upcast, não houve perda de informação
+        l1 = i1; //pegou o inteiro e colocou no long, upcast, não houve perda de informação
 
         int i2;
         long l2 = 1000000000000000000L;
@@ -34,6 +62,13 @@ public class Main {
         i4 = (int) f4; //downcast perigoso, joga todas as casas decimais fora
 
         System.out.println("b1 = " + b1);
+        System.out.println("s2 = " + s2);
+        System.out.println("c1 = " + c1);
+        System.out.println("i9 = " + i9); //upcast
+        System.out.println("l9 = " + l9); //upcast
+        System.out.println("b9 = " + b9); //resultado 65, tá certo, ocorreu downcast
+        System.out.println("s9 = " + s9); //resultado 65, tá certo, ocorreu downcast
+        System.out.println("s8 = " + s8); //ocorreu downcast, apresentou erro
         System.out.println("l1 = " + l1);
         System.out.println("i2 = " + i2);
         System.out.println("i3 = " + i3);
