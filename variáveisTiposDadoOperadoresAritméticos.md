@@ -12,12 +12,18 @@ Essas duas classes acima estão muito ligadas a orientação a objeto
 
 Padrão de definição:
 
-<?visibilidade?><?modificador?>tipo nome<?=valorInicial?>;
-O que está entre interrogações é opcional, pode-se criar uma variável sem necessidade de declararação. O que influencia se declara ou não, é o tipo de variável
+<'visibilidade'><'modificador'>tipo nome<'=valorInicial'>;
+
+O que está entre aspas simples é opcional, pode-se criar uma variável sem necessidade de declararação. O que influencia se declara ou não, é o tipo de variável
+
 V: "public", "protected" e "private"
+
 M: "static" e  "final"(essa variável é constante, seu valor não muda)
+
 T: tipo de dado
+
 N: nome que é fornecido a variável
+
 VI: valor inicial, caso deseje
 
 Convenções e regras:
@@ -48,13 +54,20 @@ Opções de tipos:
 	char: caracteres de 16-bit unicode → cchar c = '\u0084' (esse código é a letra T maiuscula); ou char c = 'T' (caracter de forma isolada usa aspas simples);
 	string: tipo "especial", é um objeto → String s = "T"
 - Numeral;
+	
 	byte: -128 até 127 → byte b = 15;
+	
 	short: -32768 até 32767 → short s = -15785;
+	
 	int: -247483648 até -247483647 → int i = 8515785;
+	
 	long: -9*10^18 até 9*10^18 → long l = 5938515785L;
+	
 	float: +- 3,40282347E+38F → float f = 3.14...(f); (Precisa colocar o f se quiser explicitar que é float, se não colcoar ele considera como uma variável double)
+	
 	double: +-1.797693134...E+308 → double d = 3.14.. (d); (O d no final é opcional)
 - Lógico;
+	
 	boolean: true ou false → boolean s = false;
 - Objeto.
 
@@ -69,10 +82,15 @@ Tipos:
 - atribuição: =, +=, -=, *=, /= e %=
 
 Precedências:
+
 1- Pós-fixado (exp++, exp--)
+
 2- Prefixado (++exp, --exp)
+
 3- Multiplicativo (*, /, %)
+
 4- Aditivo (+, -)
+
 5- Atribuição (=, +=, -=, *=, /=, %=)
 
 ### Conversões (casting)
